@@ -18,7 +18,7 @@ const { fail } = require('assert');
 
 
 // let option="mongodb+srv://products:products123456@cluster0.kkr5zm9.mongodb.net/taskmanager"
-mongoose.connect('mongodb://127.0.0.1:27017/productmanager')
+mongoose.connect('mongodb+srv://sabiburrahaman720:sabibur852@cluster0.hd2wdjw.mongodb.net/Demoproduct')
 .then((res)=>{
     console.log("Database Connected")
 }).catch((err)=>{
