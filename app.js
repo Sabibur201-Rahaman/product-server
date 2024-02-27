@@ -47,7 +47,9 @@ app.use("/api/v1",router)
 
 // // Add React Front End Routing
 app.get('*',function (req,res) {
-    res.sendFile(path.resolve(__dirname,'client','dist','index.html'))
+    res.json({
+        message:'route not found'
+    })
 })
 
 module.exports=app;

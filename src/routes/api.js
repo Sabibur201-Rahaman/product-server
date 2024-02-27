@@ -5,7 +5,11 @@ const AuthVerifyMiddleware=require('../middleware/AuthVerifyMiddleware')
 const router=express.Router()
 
 // use
-
+router.get('/',(req,res)=>{
+res.json({
+    message:'server is running'
+})
+})
 router.post("/registration",UserController.registration);
 router.post("/login",UserController.login);
 router.post("/profileUpdate",AuthVerifyMiddleware,UserController.profileUpdate);
